@@ -18,6 +18,7 @@ Package: python-rcssmin
 Architecture: any
 Depends: ${misc:Depends},
          ${python:Depends},
+         ${shlibs:Depends},
 Description: CSS Minifier - Python 2.7
  The minifier is based on the semantics of the YUI compressor, which itself is
  based on the rule list by Isaac Schlueter.
@@ -39,6 +40,7 @@ Package: python3-rcssmin
 Architecture: any
 Depends: ${misc:Depends},
          ${python3:Depends},
+         ${shlibs:Depends},
 Description: CSS Minifier - Python 3.x
  The minifier is based on the semantics of the YUI compressor, which itself is
  based on the rule list by Isaac Schlueter.
