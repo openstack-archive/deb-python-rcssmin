@@ -19,6 +19,7 @@ override_dh_auto_install:
 			--root $(CURDIR)/debian/python3-rcssmin; \
 	done
 	rm -rf $(CURDIR)/debian/python*-rcssmin/usr/lib/python*/dist-packages/*.pth
+	rm -rf $(CURDIR)/debian/python*/usr/share/doc/rcssmin
 
 #override_dh_auto_test:
 #ifeq (,$(findstring nocheck, $(DEB_BUILD_OPTIONS)))
