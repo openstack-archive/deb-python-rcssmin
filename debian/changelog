@@ -1,0 +1,5 @@
+python-rcssmin (1.0.6-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #XXXXXX)
+
+ -- Thomas Goirand <zigo@debian.org>  Tue, 22 Dec 2015 16:23:19 +0100

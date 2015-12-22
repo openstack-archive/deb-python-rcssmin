@@ -1,0 +1,57 @@
+Source: python-rcssmin
+Section: python
+Priority: optional
+Maintainer: PKG OpenStack <openstack-devel@lists.alioth.debian.org>
+Uploaders: Thomas Goirand <zigo@debian.org>,
+Build-Depends: debhelper (>= 9),
+               dh-python,
+               python-all-dev,
+               python-setuptools,
+               python3-all-dev,
+               python3-setuptools,
+Standards-Version: 3.9.6
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-rcssmin.git
+Vcs-Git: git://anonscm.debian.org/openstack/python-rcssmin.git
+Homepage: http://opensource.perlig.de/rcssmin/
+
+Package: python-rcssmin
+Architecture: any
+Depends: ${misc:Depends},
+         ${python:Depends},
+Description: CSS Minifier - Python 2.7
+ The minifier is based on the semantics of the YUI compressor, which itself is
+ based on the rule list by Isaac Schlueter.
+ .
+ This module is a re-implementation aiming for speed instead of maximum
+ compression, so it can be used at runtime (rather than during a preprocessing
+ step). RCSSmin does syntactical compression only (removing spaces, comments
+ and possibly semicolons). It does not provide semantic compression (like
+ removing empty blocks, collapsing redundant properties etc). It does, however,
+ support various CSS hacks (by keeping them working as intended).
+ .
+ rcssmin.c is a reimplementation of rcssmin.py in C and improves runtime up to
+ factor 100 or so (depending on the input). docs/BENCHMARKS in the source
+ distribution contains the details.
+ .
+ This package contains the Python 2.7 module.
+
+Package: python3-rcssmin
+Architecture: any
+Depends: ${misc:Depends},
+         ${python3:Depends},
+Description: CSS Minifier - Python 3.x
+ The minifier is based on the semantics of the YUI compressor, which itself is
+ based on the rule list by Isaac Schlueter.
+ .
+ This module is a re-implementation aiming for speed instead of maximum
+ compression, so it can be used at runtime (rather than during a preprocessing
+ step). RCSSmin does syntactical compression only (removing spaces, comments
+ and possibly semicolons). It does not provide semantic compression (like
+ removing empty blocks, collapsing redundant properties etc). It does, however,
+ support various CSS hacks (by keeping them working as intended).
+ .
+ rcssmin.c is a reimplementation of rcssmin.py in C and improves runtime up to
+ factor 100 or so (depending on the input). docs/BENCHMARKS in the source
+ distribution contains the details.
+ .
+ This package contains the Python 3.x module.
