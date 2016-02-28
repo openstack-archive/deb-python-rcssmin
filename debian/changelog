@@ -1,3 +1,9 @@
+python-rcssmin (1.0.6-2) UNRELEASED; urgency=medium
+
+  * Fixed VCS URLs (https).
+
+ -- Ondřej Nový <novy@ondrej.org>  Sun, 28 Feb 2016 15:48:16 +0100
+
 python-rcssmin (1.0.6-1) unstable; urgency=medium
 
   * Initial release. (Closes: #808765)
