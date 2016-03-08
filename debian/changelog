@@ -1,6 +1,10 @@
 python-rcssmin (1.0.6-2) UNRELEASED; urgency=medium
 
+  [ Ondřej Nový ]
   * Fixed VCS URLs (https).
+
+  [ James Page ]
+  * d/rules: Execute unit tests during package build.
 
  -- Ondřej Nový <novy@ondrej.org>  Sun, 28 Feb 2016 15:48:16 +0100
 
